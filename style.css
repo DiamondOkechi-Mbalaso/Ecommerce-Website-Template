@@ -632,7 +632,6 @@ footer .copyright {
 .small-img-group {
     display: flex;
     justify-content: space-between;
-    margin-top: 5px;
 }
 
 .small-img-col {
@@ -744,6 +743,11 @@ footer .copyright {
         left: 30px;
         color: #222;
         font-size: 24px;
+        transition: 0.3s;
+    }
+
+    #close:hover {
+        background-color: #088178;
     }
 
     #lg-bag {
@@ -838,6 +842,10 @@ footer .copyright {
         height: 40vh;
     }
     
+    #sm-banner .banner-box2 {
+        margin-top: 20px;
+    }
+    
     #banner3 {
         padding: 0 20px;
     }
@@ -857,261 +865,19 @@ footer .copyright {
     footer .copyright {
         text-align: start;
     }
-}
 
-@media (max-width: 1200px) {
-
-    #product1 .pro {
-        width: 31%;
-    }
-
-    #banner3 .banner-box {
-        min-width: 32%;
-    }
-
-    #newsletter .form {
-        width: 50%;
-    }
-}
-
-@media (max-width: 992px) {
-
-    .section-p1 {
-        padding: 40px;
-    }
-
-    #header {
-        padding: 20px 40px;
-    }
-
-    #hero {
-        height: 70vh;
-        padding: 0 40px;
-        background-position: top 30% right 35%;
-    }
-
-    #hero h1 {
-        font-size: 42px;
-        line-height: 50px;
-    }
-
-    #hero h2 {
-        font-size: 38px;
-    }
-
-    #feature {
-        justify-content: center;
-        gap: 20px;
-    }
-
-    #product1 .pro-container {
-        justify-content: center;
-        gap: 20px;
-    }
-
-    #product1 .pro {
-        width: 45%;
-    }
-
-    #sm-banner .banner-box {
-        min-width: 100%;
-        height: 35vh;
-    }
-
-    #banner3 .banner-box {
-        min-width: 100%;
-    }
-
-    #newsletter {
-        gap: 20px;
-    }
-
-    #newsletter .form {
-        width: 100%;
-    }
-}
-
-@media (max-width: 799px) {
-
-    #navbar {
+    /* Single Product */
+    #prodetails {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-
-        position: fixed;
-        top: 0;
-        right: -300px;
-
-        height: 100vh;
-        width: 300px;
-
-        background-color: #e3e6f3;
-
-        box-shadow: 0 40px 60px rgba(0,0,0,0.1);
-
-        padding: 80px 0 0 20px;
-
-        transition: 0.3s;
     }
 
-    #navbar.active {
-        right: 0;
-    }
-
-    #navbar li {
-        margin-bottom: 25px;
-    }
-
-    #mobile {
-        display: flex;
-        align-items: center;
-    }
-
-    #mobile i {
-        font-size: 24px;
-        padding-left: 20px;
-        cursor: pointer;
-    }
-
-    #close {
-        display: initial;
-        position: absolute;
-        top: 30px;
-        left: 30px;
-        font-size: 24px;
-    }
-
-    #lg-bag {
-        display: none;
-    }
-}
-
-@media (max-width: 600px) {
-
-    .section-p1 {
-        padding: 30px 20px;
-    }
-
-    #header {
-        padding: 15px 20px;
-    }
-
-    #hero {
-        height: 65vh;
-        padding: 0 20px;
-        background-position: 60%;
-    }
-
-    #hero h4 {
-        font-size: 14px;
-    }
-
-    #hero h1 {
-        font-size: 34px;
-        line-height: 40px;
-    }
-
-    #hero h2 {
-        font-size: 30px;
-        line-height: 36px;
-    }
-
-    #hero p {
-        font-size: 14px;
-    }
-
-    #hero button {
-        padding: 14px 50px 14px 50px;
-    }
-
-    #feature {
-        justify-content: center;
-    }
-
-    #feature .fe-box {
-        width: 140px;
-    }
-
-    #product1 .pro {
+    #prodetails .single-pro-image {
         width: 100%;
+        margin-right: 0px;
     }
-
-    #banner {
-        height: 30vh;
-        padding: 20px;
-    }
-
-    #banner h2 {
-        font-size: 22px;
-        line-height: 30px;
-    }
-
-    #sm-banner .banner-box {
-        height: 30vh;
-        padding: 20px;
-    }
-
-    #sm-banner h2 {
-        font-size: 24px;
-    }
-
-    #banner3 {
-        padding: 0 20px;
-    }
-
-    #banner3 .banner-box {
-        height: 25vh;
-    }
-
-    #newsletter {
-        padding: 40px 20px;
-    }
-
-    #newsletter h4 {
-        font-size: 20px;
-    }
-
-    #newsletter p {
-        font-size: 13px;
-    }
-
-    footer {
-        gap: 30px;
-    }
-
-    footer .copyright {
-        text-align: center;
-    }
-}
-
-@media (max-width: 400px) {
-
-    h1 {
-        font-size: 28px;
-        line-height: 34px;
-    }
-
-    h2 {
-        font-size: 24px;
-        line-height: 30px;
-    }
-
-    #hero {
-        height: 60vh;
-    }
-
-    #feature .fe-box {
+    
+    #prodetails .single-pro-details {
         width: 100%;
-    }
-
-    #newsletter input {
-        font-size: 12px;
-    }
-
-    button.normal,
-    button.white {
-        padding: 10px 16px;
-        font-size: 12px;
     }
 }
