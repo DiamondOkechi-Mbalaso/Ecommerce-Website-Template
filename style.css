@@ -250,7 +250,7 @@ body {
 
 #product1 .pro {
     width: 23%;
-    min-width: 250px;
+    min-width: 220px;
     padding: 10px 12px;
     border: 1px solid #cce7d0;
     border-radius: 25px;
@@ -345,6 +345,10 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
     flex-direction: row;
+}
+
+#bar {
+    cursor: pointer;
 }
 
 #sm-banner .banner-box {
@@ -684,6 +688,74 @@ footer .copyright {
 }
 
 /* Blog Page */
+#blog {
+    padding: 150px 150px 0 150px;
+}
+
+#blog .blog-box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    padding-bottom: 90px;
+}
+
+#blog img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+#blog .blog-img {
+    width: 50%;
+    margin-right: 40px;
+}
+
+#blog .blog-details {
+    width: 50%;
+}
+
+#blog .blog-details a {
+    text-decoration: none;
+    font-size: 11px;
+    color: #000;
+    font-weight: 700;
+    position: relative;
+    transition: 0.3s;
+}
+
+#blog .blog-details a::after {
+    content: "";
+    width: 50px;
+    height: 2.5px;
+    background-color: #000;
+    position: absolute;
+    top: 4px;
+    right: -60px;
+
+}
+
+#blog .blog-details a:hover {
+    color: #088178;
+}
+
+#blog .blog-details a:hover::after {
+    background-color: #088178;
+}
+
+#blog .blog-box h1 {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    font-size: 70px;
+    font-weight: 700;
+    color: #c9cbce;
+    z-index: -9;
+}
+
+#page-header.blog-header {
+    background-image: url(images/b19.jpg);
+}
 
 
 /* About Page */
@@ -737,18 +809,29 @@ footer .copyright {
     }
 
     #close {
-        display: initial;
-        position: absolute;
-        top: 30px;
-        left: 30px;
-        color: #222;
-        font-size: 24px;
-        transition: 0.3s;
-    }
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    #close:hover {
-        background-color: #088178;
-    }
+    text-decoration: none;
+    color: #1a1a1a;
+
+    border-radius: 50%;
+    transition: 0.3s ease;
+}
+
+#close i {
+    font-size: 20px;
+}
+
+#close:hover {
+    background-color: #088178;
+    color: #fff;
+}
 
     #lg-bag {
         display: none;
@@ -879,5 +962,202 @@ footer .copyright {
     
     #prodetails .single-pro-details {
         width: 100%;
+    }
+
+    /* Blog Page */
+    #blog {
+        padding: 100px 20px 0 20px;
+    }
+    
+    #blog .blog-box {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #blog .blog-img {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    #blog .blog-details {
+        width: 100%;
+    }
+}
+
+/* EXTRA MEDIA QUERIES */
+
+/* ==========================
+   Large Laptops (1200px)
+========================== */
+@media (max-width: 1200px) {
+
+    .section-p1 {
+        padding: 40px 60px;
+    }
+
+    #product1 .pro {
+        width: 30%;
+    }
+
+    #newsletter .form {
+        width: 55%;
+    }
+
+    #banner3 .banner-box {
+        min-width: 32%;
+    }
+}
+
+
+/* ==========================
+   Small Laptops (992px)
+========================== */
+@media (max-width: 992px) {
+
+    #header {
+        padding: 20px 40px;
+    }
+
+    #hero {
+        padding: 0 50px;
+    }
+
+    #product1 .pro {
+        width: 45%;
+        min-width: 220px;
+    }
+
+    #banner3 {
+        gap: 15px;
+    }
+
+    #banner3 .banner-box {
+        min-width: 48%;
+    }
+
+    #newsletter .form {
+        width: 65%;
+    }
+
+    #blog {
+        padding: 120px 60px 0;
+    }
+}
+
+
+/* ==========================
+   Tablets (768px)
+========================== */
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 42px;
+        line-height: 52px;
+    }
+
+    h2 {
+        font-size: 36px;
+        line-height: 44px;
+    }
+
+    #hero {
+        height: 65vh;
+        padding: 0 40px;
+    }
+
+    #feature {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    #feature .fe-box {
+        width: 160px;
+    }
+
+    #banner3 .banner-box {
+        min-width: 100%;
+    }
+
+    #newsletter {
+        text-align: center;
+    }
+
+    #newsletter .newstext {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #newsletter .form {
+        width: 100%;
+    }
+
+    footer {
+        gap: 20px;
+    }
+
+    footer .col {
+        width: 45%;
+    }
+}
+
+
+/* ==========================
+   Large Phones (576px)
+========================== */
+@media (max-width: 576px) {
+
+    #header {
+        padding: 15px 20px;
+    }
+
+    #hero {
+        height: 60vh;
+        padding: 0 20px;
+        text-align: left;
+    }
+
+    #hero button {
+        padding: 14px 50px;
+        background-size: contain;
+    }
+
+    #feature {
+        justify-content: center;
+    }
+
+    #feature .fe-box {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    #product1 .pro {
+        width: 100%;
+        min-width: unset;
+    }
+
+    #sm-banner .banner-box {
+        padding: 20px;
+    }
+
+    #sm-banner h2 {
+        font-size: 22px;
+    }
+
+    #banner h2 {
+        font-size: 22px;
+    }
+
+    footer .col {
+        width: 100%;
+    }
+
+    #blog {
+        padding: 80px 15px 0;
+    }
+
+    #blog .blog-box h1 {
+        font-size: 50px;
     }
 }
