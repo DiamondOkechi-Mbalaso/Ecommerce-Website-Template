@@ -286,7 +286,7 @@ body {
     font-size: 14px;
 }
 
-#product1 .pro .des i{
+#product1 .pro .des i {
     font-size: 12px;
     color: rgb(243, 181, 25);
 }
@@ -332,7 +332,7 @@ body {
 
 #banner h2 span {
     color: #ef3636;
-    
+
 }
 
 #banner button:hover {
@@ -354,7 +354,7 @@ body {
 #sm-banner .banner-box {
     display: flex;
     flex-direction: column;
-    justify-content: center; 
+    justify-content: center;
     align-items: flex-start;
     background-image: url(images/b17.jpg);
     min-width: 48%;
@@ -402,7 +402,7 @@ body {
 #banner3 .banner-box {
     display: flex;
     flex-direction: column;
-    justify-content: center; 
+    justify-content: center;
     align-items: flex-start;
     background-image: url(images/b7\ \(1\).jpg);
     min-width: 30%;
@@ -425,7 +425,7 @@ body {
     color: #fff;
     font-weight: 900;
     font-size: 22px;
-} 
+}
 
 #banner3 h3 {
     color: #ec544e;
@@ -484,7 +484,7 @@ body {
     color: #818ea0;
 }
 
-#newsletter p span{
+#newsletter p span {
     color: #ffbd27;
 }
 
@@ -759,7 +759,43 @@ footer .copyright {
 
 
 /* About Page */
+#page-header.about-header {
+    background-image: url(images/banner\ \(1\).png);
+}
 
+#about-head img {
+    width: 50%;
+    height: auto;
+}
+
+#about-head {
+    display: flex;
+    align-items: center;
+}
+
+#about-head div {
+    padding-left: 40px;
+}
+
+#about-app {
+    text-align: center;
+}
+
+#about-app a {
+    color: #088178;
+}
+
+#about-app .video {
+    width: 70%;
+    height: 100%;
+    margin: 30px auto 0 auto;
+}
+
+#about-app .video video {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
 
 /* Contact Page */
 
@@ -789,7 +825,7 @@ footer .copyright {
         transition: 0.3s;
     }
 
-    #navbar.active{
+    #navbar.active {
         right: 0px;
     }
 
@@ -809,29 +845,29 @@ footer .copyright {
     }
 
     #close {
-    width: 45px;
-    height: 45px;
-    position: absolute;
-    top: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+        width: 45px;
+        height: 45px;
+        position: absolute;
+        top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
-    text-decoration: none;
-    color: #1a1a1a;
+        text-decoration: none;
+        color: #1a1a1a;
 
-    border-radius: 50%;
-    transition: 0.3s ease;
-}
+        border-radius: 50%;
+        transition: 0.3s ease;
+    }
 
-#close i {
-    font-size: 20px;
-}
+    #close i {
+        font-size: 20px;
+    }
 
-#close:hover {
-    background-color: #088178;
-    color: #fff;
-}
+    #close:hover {
+        background-color: #088178;
+        color: #fff;
+    }
 
     #lg-bag {
         display: none;
@@ -872,13 +908,30 @@ footer .copyright {
     #banner3 {
         padding: 0 40px;
     }
-    
+
     #banner3 .banner-box {
         width: 100%;
     }
 
     #newsletter .form {
         width: 70%;
+    }
+
+    /* About Page */
+    #about-head {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #about-head img {
+        width: 100%;
+    }
+
+    #about-head div {
+        width: 100%;
+        padding-left: 0;
+        margin-top: 20px;
     }
 }
 
@@ -924,11 +977,11 @@ footer .copyright {
     #sm-banner .banner-box {
         height: 40vh;
     }
-    
+
     #sm-banner .banner-box2 {
         margin-top: 20px;
     }
-    
+
     #banner3 {
         padding: 0 20px;
     }
@@ -959,7 +1012,7 @@ footer .copyright {
         width: 100%;
         margin-right: 0px;
     }
-    
+
     #prodetails .single-pro-details {
         width: 100%;
     }
@@ -968,7 +1021,7 @@ footer .copyright {
     #blog {
         padding: 100px 20px 0 20px;
     }
-    
+
     #blog .blog-box {
         display: flex;
         flex-direction: column;
@@ -982,6 +1035,24 @@ footer .copyright {
     }
 
     #blog .blog-details {
+        width: 100%;
+    }
+
+    /* About Page */
+    #about-head {
+        flex-direction: column;
+    }
+    
+    #about-head img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    #about-head div {
+        padding-left: 0px;
+    }
+
+    #about-app .video {
         width: 100%;
     }
 }
